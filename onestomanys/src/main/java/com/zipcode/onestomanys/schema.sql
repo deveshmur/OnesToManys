@@ -18,13 +18,11 @@ CREATE TABLE players (
     
     team_id        INTEGER,
     
-    created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    CONSTRAINT fk_players_team
-        FOREIGN KEY (team_id)
-        REFERENCES teams(team_id)
-        ON UPDATE CASCADE
-        ON DELETE SET NULL
+CONSTRAINT fk_players_team
+    FOREIGN KEY (team_id)
+    REFERENCES teams(team_id)
+    ON UPDATE CASCADE
+    ON DELETE SET NULL
 );
 
 CREATE INDEX idx_players_team_id ON players(team_id);
