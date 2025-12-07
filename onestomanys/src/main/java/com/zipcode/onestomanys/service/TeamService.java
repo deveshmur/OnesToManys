@@ -38,7 +38,8 @@ public class TeamService {
 
     public Player createPlayerForTeam(Long teamId, Player player) {
         Team team = getTeamById(teamId); 
-        player.setTeam(team);
-        return playerRepository.save(player);
+        team.addPlayer(player);
+        teamRepository.save(team);
+        return player;
     }
 }
