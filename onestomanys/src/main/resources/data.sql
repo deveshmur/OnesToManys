@@ -7,6 +7,7 @@ VALUES (1, 'Kansas City Chiefs', 'Kansas City', 'GEHA Field at Arrowhead Stadium
 -- ============================
 -- Players for Team 1
 -- ============================
+-- BLOCK 1
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1, 'Patrick Mahomes', 'QB', 15, 74, 1),
@@ -17,7 +18,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (4, 'Kareem Hunt', 'RB', 29, 71, 1),
 (5, 'Carson Steele', 'FB', 42, 72, 1),
 (6, 'Samaje Perine', 'RB', 34, 71, 1),
-(7, 'Clyde Edwards-Helaire', 'RB', 25, 67, 1),
+(7, 'Clyde Edwards-Helaire', 'RB', 30, 67, 1),
 
 -- Wide Receivers
 (8, 'Rashee Rice', 'WR', 4, 73, 1),
@@ -48,8 +49,8 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Defensive Line
 (28, 'Chris Jones', 'DT', 95, 78, 1),
 (29, 'George Karlaftis', 'DE', 56, 76, 1),
-(30, 'Mike Danna', 'DE', 51, 74, 1),
-(31, 'Derrick Nnadi', 'DT', 91, 73, 1),
+ (30, 'Mike Danna', 'DE', 51, 74, 1),
+ (31, 'Derrick Nnadi', 'DT', 91, 73, 1),
 (32, 'Tershawn Wharton', 'DT', 98, 76, 1),
 (33, 'Mike Pennel', 'NT', 69, 76, 1),
 (34, 'Felix Anudike-Uzomah', 'DE', 97, 75, 1),
@@ -88,6 +89,7 @@ VALUES (2, 'Philadelphia Eagles', 'Philadelphia', 'Lincoln Financial Field');
 -- =====================================
 -- Players for Team 2
 -- =====================================
+-- BLOCK 2
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (54, 'Jalen Hurts', 'QB', 1, 73, 2),
@@ -167,6 +169,7 @@ VALUES (3, 'San Francisco 49ers', 'San Francisco', 'Levi''s Stadium');
 -- =====================================
 -- Players for Team 3
 -- =====================================
+-- BLOCK 3
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (105, 'Brock Purdy', 'QB', 13, 73, 3),
@@ -176,9 +179,9 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Running Backs & Fullback
 (108, 'Christian McCaffrey', 'RB', 23, 71, 3),
 (109, 'Kyle Juszczyk', 'FB', 44, 74, 3),
-(110, 'Isaac Guerendo', 'RB', 31, 72, 3),
+(110, 'Isaac Guerendo', 'RB', 26, 72, 3),
 (111, 'Jordan Mason', 'RB', 32, 70, 3),
-(112, 'Elijah Mitchell', 'RB', 25, 70, 3),
+(112, 'Elijah Mitchell', 'RB', 30, 70, 3),
 
 -- Wide Receivers
 (113, 'Deebo Samuel', 'WR', 10, 71, 3),
@@ -215,7 +218,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 
 -- Linebackers
 (138, 'Fred Warner', 'LB', 54, 75, 3),
-(139, 'De'Vondre Campbell', 'LB', 37, 75, 3),
+(139, 'De Vondre Campbell', 'LB', 37, 75, 3),
 (140, 'Dee Winters', 'LB', 53, 71, 3),
 (141, 'Elijah Lee', 'LB', 52, 74, 3),
 (142, 'Tatum Bethune', 'LB', 48, 73, 3),
@@ -223,11 +226,11 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Defensive Backs
 (143, 'Charvarius Ward', 'CB', 20, 72, 3),
 (144, 'Deommodore Lenoir', 'CB', 2, 70, 3),
-(145, 'Ji'Ayir Brown', 'S', 27, 71, 3),
+(145, 'Ji Ayir Brown', 'S', 27, 71, 3),
 (146, 'Malik Mustapha', 'S', 6, 70, 3),
 (147, 'Chase Lucas', 'CB', 26, 71, 3),
 (148, 'Renardo Green', 'CB', 0, 72, 3),
-(149, 'Jason Pinnock', 'S', 25, 72, 3),
+(149, 'Jason Pinnock', 'S', 30, 72, 3),
 (150, 'Siran Neal', 'DB', 33, 72, 3),
 
 -- Special Teams
@@ -244,6 +247,7 @@ VALUES (4, 'Dallas Cowboys', 'Dallas', 'AT&T Stadium');
 -- =====================================
 -- Players for Team 4
 -- =====================================
+-- BLOCK 4
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (154, 'Dak Prescott', 'QB', 4, 74, 4),
@@ -316,6 +320,7 @@ VALUES (5, 'Miami Dolphins', 'Miami', 'Hard Rock Stadium');
 -- =====================================
 -- Players for Team 5
 -- =====================================
+-- BLOCK 5
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (198, 'Tua Tagovailoa', 'QB', 1, 73, 5),
@@ -323,10 +328,10 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (200, 'Quinn Ewers', 'QB', 14, 74, 5),
 
 -- Running Backs & Fullback
-(201, 'Raheem Mostert', 'RB', 31, 71, 5),
+(201, 'Raheem Mostert', 'RB', 26, 71, 5),
 (202, 'DeVon Achane', 'RB', 28, 69, 5),
-(203, 'Jaylen Wright', 'RB', 25, 70, 5),
-(204, 'Ollie Gordon II', 'RB', 31, 74, 5),
+(203, 'Jaylen Wright', 'RB', 30, 70, 5),
+(204, 'Ollie Gordon II', 'RB', 26, 74, 5),
 (205, 'Alec Ingold', 'FB', 30, 73, 5),
 
 -- Wide Receivers
@@ -363,7 +368,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Linebackers
 (229, 'Jordyn Brooks', 'LB', 20, 72, 5),
 (230, 'Anthony Walker Jr.', 'LB', 6, 74, 5),
-(231, 'Tyrel Dodson', 'LB', 25, 72, 5),
+(231, 'Tyrel Dodson', 'LB', 30, 72, 5),
 (232, 'Willie Gay Jr.', 'LB', 40, 73, 5),
 (233, 'Matthew Judon', 'LB', 8, 75, 5),
 
@@ -391,6 +396,7 @@ VALUES (6, 'Cincinnati Bengals', 'Cincinnati', 'Paycor Stadium');
 -- =====================================
 -- Players for Team 6
 -- =====================================
+-- BLOCK 6
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (244, 'Joe Burrow', 'QB', 9, 76, 6),
@@ -400,23 +406,23 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Running Backs
 (247, 'Chase Brown', 'RB', 30, 70, 6),
 (248, 'Samaje Perine', 'RB', 34, 70, 6),
-(249, 'Tahj Brooks', 'RB', 25, 69, 6),
+(249, 'Tahj Brooks', 'RB', 30, 69, 6),
 
 -- Wide Receivers
-(250, 'Ja Marr Chase', 'WR', 1, 72, 6),
-(251, 'Tee Higgins', 'WR', 5, 76, 6),
-(252, 'Andrei Iosivas', 'WR', 80, 75, 6),
-(253, 'Charlie Jones', 'WR', 15, 72, 6),
-(254, 'Jermaine Burton', 'WR', 81, 72, 6),
+ (250, 'Ja Marr Chase', 'WR', 1, 72, 6),
+ (251, 'Tee Higgins', 'WR', 5, 76, 6),
+ (252, 'Andrei Iosivas', 'WR', 80, 75, 6),
+ (253, 'Charlie Jones', 'WR', 15, 72, 6),
+ (254, 'Jermaine Burton', 'WR', 81, 72, 6),
 
 -- Tight Ends
-(255, 'Noah Fant', 'TE', 86, 76, 6),
-(256, 'Mike Gesicki', 'TE', 88, 78, 6),
-(257, 'Drew Sample', 'TE', 89, 77, 6),
-(258, 'Tanner Hudson', 'TE', 87, 77, 6),
+ (255, 'Noah Fant', 'TE', 86, 76, 6),
+ (256, 'Mike Gesicki', 'TE', 88, 78, 6),
+ (257, 'Drew Sample', 'TE', 89, 77, 6),
+ (258, 'Tanner Hudson', 'TE', 87, 77, 6),
 
 -- Offensive Line
-(259, 'Orlando Brown Jr.', 'T', 75, 80, 6),
+ (259, 'Orlando Brown Jr.', 'T', 75, 80, 6),
 (260, 'Ted Karras', 'C', 64, 76, 6),
 (261, 'Amarius Mims', 'T', 71, 80, 6),
 (262, 'Cordell Volson', 'G', 67, 78, 6),
@@ -462,6 +468,7 @@ VALUES (7, 'Los Angeles Rams', 'Los Angeles', 'SoFi Stadium');
 -- =====================================
 -- Players for Team 7
 -- =====================================
+-- BLOCK 7
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (287, 'Matthew Stafford', 'QB', 9, 75, 7),
@@ -515,7 +522,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Defensive Backs
 (322, 'Kam Curl', 'S', 3, 74, 7),
 (323, 'Kamren Kinchens', 'S', 26, 72, 7),
-(324, 'Darious Williams', 'CB', 31, 69, 7),
+(324, 'Darious Williams', 'CB', 26, 69, 7),
 (325, 'Cobie Durant', 'CB', 14, 71, 7),
 (326, 'Ahkello Witherspoon', 'CB', 4, 74, 7),
 (327, 'Emmanuel Forbes Jr.', 'CB', 1, 72, 7),
@@ -535,6 +542,7 @@ VALUES (8, 'Denver Broncos', 'Denver', 'Empower Field at Mile High');
 -- =====================================
 -- Players for Team 8
 -- =====================================
+-- BLOCK 8
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (332, 'Bo Nix', 'QB', 10, 74, 8),
@@ -591,7 +599,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (369, 'Brandon Jones', 'S', 22, 72, 8),
 (370, 'Ja''Quan McMillian', 'CB', 29, 70, 8),
 (371, 'JL Skinner', 'S', 34, 76, 8),
-(372, 'Kris Abrams-Draine', 'CB', 31, 71, 8),
+(372, 'Kris Abrams-Draine', 'CB', 26, 71, 8),
 
 -- Special Teams
 (373, 'Wil Lutz', 'K', 3, 71, 8),
@@ -607,6 +615,7 @@ VALUES (9, 'New York Jets', 'New York', 'MetLife Stadium');
 -- =====================================
 -- Players for Team 9
 -- =====================================
+-- BLOCK 9
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (376, 'Justin Fields', 'QB', 7, 75, 9),
@@ -615,7 +624,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 
 -- Running Backs & Fullback
 (379, 'Breece Hall', 'RB', 20, 71, 9),
-(380, 'Khalil Herbert', 'RB', 31, 69, 9),
+(380, 'Khalil Herbert', 'RB', 26, 69, 9),
 (381, 'Isaiah Davis', 'RB', 32, 73, 9),
 (382, 'Kene Nwangwu', 'RB', 34, 73, 9),
 (383, 'Andrew Beck', 'FB', 47, 75, 9),
@@ -680,6 +689,7 @@ VALUES (10, 'Buffalo Bills', 'Buffalo', 'Highmark Stadium');
 -- =====================================
 -- Players for Team 10
 -- =====================================
+-- BLOCK 10
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (421, 'Josh Allen', 'QB', 17, 77, 10),
@@ -753,6 +763,7 @@ VALUES (11, 'Seattle Seahawks', 'Seattle', 'Lumen Field');
 -- =====================================
 -- Players for Team 11
 -- =====================================
+-- BLOCK 11
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (466, 'Geno Smith', 'QB', 7, 75, 11),
@@ -823,6 +834,7 @@ VALUES (12, 'Tampa Bay Buccaneers', 'Tampa', 'Raymond James Stadium');
 -- =====================================
 -- Players for Team 12
 -- =====================================
+-- BLOCK 12
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (508, 'Baker Mayfield', 'QB', 6, 73, 12),
@@ -872,7 +884,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (540, 'Anthony Nelson', 'OLB', 98, 79, 12),
 
 -- Defensive Backs
-(541, 'Antoine Winfield Jr.', 'S', 31, 69, 12),
+(541, 'Antoine Winfield Jr.', 'S', 26, 69, 12),
 (542, 'Jamel Dean', 'CB', 35, 73, 12),
 (543, 'Zyon McCollum', 'CB', 27, 74, 12),
 (544, 'Christian Izien', 'S', 29, 70, 12),
@@ -894,6 +906,7 @@ VALUES (13, 'Baltimore Ravens', 'Baltimore', 'M&T Bank Stadium');
 -- =====================================
 -- Players for Team 13
 -- =====================================
+-- BLOCK 13
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (551, 'Lamar Jackson', 'QB', 8, 74, 13),
@@ -965,6 +978,7 @@ VALUES (14, 'Green Bay Packers', 'Green Bay', 'Lambeau Field');
 -- =====================================
 -- Players for Team 14
 -- =====================================
+-- BLOCK 14
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (594, 'Jordan Love', 'QB', 10, 75, 14),
@@ -1017,7 +1031,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Defensive Backs
 (628, 'Jaire Alexander', 'CB', 23, 70, 14),
 (629, 'Xavier McKinney', 'S', 29, 73, 14),
-(630, 'Keisean Nixon', 'CB', 25, 70, 14),
+(630, 'Keisean Nixon', 'CB', 30, 70, 14),
 (631, 'Evan Williams', 'S', 33, 71, 14),
 (632, 'Corey Ballentine', 'CB', 35, 72, 14),
 (633, 'Kalon Barnes', 'CB', 24, 72, 14),
@@ -1037,6 +1051,7 @@ VALUES (15, 'Arizona Cardinals', 'Phoenix', 'State Farm Stadium');
 -- =====================================
 -- Players for Team 15
 -- =====================================
+-- BLOCK 15
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (638, 'Kyler Murray', 'QB', 1, 69, 15),
@@ -1079,7 +1094,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 
 -- Linebackers (Edge/Inside)
 (665, 'B.J. Ojulari', 'OLB', 18, 75, 15),
-(666, 'Zaven Collins', 'ILB', 25, 77, 15),
+(666, 'Zaven Collins', 'ILB', 30, 77, 15),
 (667, 'Jordan Hicks', 'ILB', 58, 74, 15),
 (668, 'Victor Dimukeje', 'OLB', 46, 74, 15),
 (669, 'Darius Robinson', 'OLB', 9, 76, 15),
@@ -1109,6 +1124,7 @@ VALUES (16, 'Indianapolis Colts', 'Indianapolis', 'Lucas Oil Stadium');
 -- =====================================
 -- Players for Team 16
 -- =====================================
+-- BLOCK 16
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (681, 'Anthony Richardson', 'QB', 5, 76, 16),
@@ -1119,7 +1135,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (684, 'Jonathan Taylor', 'RB', 28, 70, 16),
 (685, 'Ameer Abdullah', 'RB', 26, 69, 16),
 (686, 'DJ Giddens', 'RB', 21, 72, 16),
-(687, 'Tyler Goodson', 'RB', 31, 69, 16),
+(687, 'Tyler Goodson', 'RB', 26, 69, 16),
 
 -- Wide Receivers
 (688, 'Michael Pittman Jr.', 'WR', 11, 76, 16),
@@ -1164,7 +1180,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (717, 'Julian Blackmon', 'S', 32, 72, 16),
 (718, 'Nick Cross', 'S', 20, 72, 16),
 (719, 'Jaylon Jones', 'CB', 40, 74, 16),
-(720, 'Rodney Thomas II', 'S', 25, 73, 16),
+(720, 'Rodney Thomas II', 'S', 30, 73, 16),
 (721, 'JuJu Brents', 'CB', 29, 75, 16),
 (722, 'Dallis Flowers', 'CB', 21, 73, 16),
 
@@ -1182,6 +1198,7 @@ VALUES (17, 'Houston Texans', 'Houston', 'NRG Stadium');
 -- =====================================
 -- Players for Team 17
 -- =====================================
+-- BLOCK 17
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (726, 'C.J. Stroud', 'QB', 7, 75, 17),
@@ -1236,7 +1253,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (761, 'Jeff Okudah', 'CB', 1, 73, 17),
 (762, 'Jalen Pitre', 'S', 5, 71, 17),
 (763, 'Jimmie Ward', 'S', 20, 70, 17),
-(764, 'Calen Bullock', 'S', 25, 74, 17),
+(764, 'Calen Bullock', 'S', 30, 74, 17),
 (765, 'Kamari Lassiter', 'CB', 2, 72, 17),
 (766, 'Desmond King II', 'CB', 29, 70, 17),
 
@@ -1254,6 +1271,7 @@ VALUES (18, 'Atlanta Falcons', 'Atlanta', 'Mercedes-Benz Stadium');
 -- =====================================
 -- Players for Team 18
 -- =====================================
+-- BLOCK 18
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (770, 'Kirk Cousins', 'QB', 18, 75, 18),
@@ -1262,7 +1280,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 
 -- Running Backs
 (773, 'Bijan Robinson', 'RB', 7, 71, 18),
-(774, 'Tyler Allgeier', 'RB', 25, 71, 18),
+(774, 'Tyler Allgeier', 'RB', 30, 71, 18),
 (775, 'Nathan Carter', 'RB', 38, 70, 18),
 
 -- Wide Receivers
@@ -1306,7 +1324,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (803, 'A.J. Terrell', 'CB', 24, 73, 18),
 (804, 'Jessie Bates III', 'S', 3, 73, 18),
 (805, 'Mike Hughes', 'CB', 21, 70, 18),
-(806, 'Xavier Watts', 'S', 31, 72, 18),
+(806, 'Xavier Watts', 'S', 26, 72, 18),
 (807, 'Dee Alford', 'CB', 20, 71, 18),
 (808, 'Jordan Fuller', 'S', 29, 74, 18),
 (809, 'C.J. Henderson', 'CB', 39, 73, 18),
@@ -1325,6 +1343,7 @@ VALUES (19, 'Las Vegas Raiders', 'Las Vegas', 'Allegiant Stadium');
 -- =====================================
 -- Players for Team 19
 -- =====================================
+-- BLOCK 19
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (813, 'Geno Smith', 'QB', 7, 75, 19),
@@ -1333,7 +1352,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 
 -- Running Backs
 (816, 'Zamir White', 'RB', 3, 71, 19),
-(817, 'Raheem Mostert', 'RB', 31, 70, 19),
+(817, 'Raheem Mostert', 'RB', 26, 70, 19),
 (818, 'Ashton Jeanty', 'RB', 2, 68, 19),
 (819, 'Dylan Laube', 'RB', 23, 69, 19),
 
@@ -1381,7 +1400,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (850, 'Isaiah Pola-Mao', 'S', 20, 76, 19),
 (851, 'Eric Stokes', 'CB', 22, 73, 19),
 (852, 'Darnay Holmes', 'CB', 30, 70, 19),
-(853, 'Decamerion Richardson', 'CB', 25, 74, 19),
+(853, 'Decamerion Richardson', 'CB', 30, 74, 19),
 (854, 'Kyu Blu Kelly', 'CB', 36, 72, 19),
 (855, 'Lonnie Johnson Jr.', 'S', 32, 74, 19),
 
@@ -1399,6 +1418,7 @@ VALUES (20, 'New Orleans Saints', 'New Orleans', 'Caesars Superdome');
 -- =====================================
 -- Players for Team 20
 -- =====================================
+-- BLOCK 20
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (859, 'Derek Carr', 'QB', 4, 75, 20),
@@ -1408,7 +1428,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Running Backs
 (862, 'Alvin Kamara', 'RB', 41, 70, 20),
 (863, 'Jamaal Williams', 'RB', 28, 72, 20),
-(864, 'Kendre Miller', 'RB', 25, 71, 20),
+(864, 'Kendre Miller', 'RB', 30, 71, 20),
 (865, 'Adam Prentice', 'FB', 46, 72, 20),
 
 -- Wide Receivers
@@ -1470,6 +1490,7 @@ VALUES (21, 'Cleveland Browns', 'Cleveland', 'Cleveland Browns Stadium');
 -- =====================================
 -- Players for Team 21
 -- =====================================
+-- BLOCK 21
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (902, 'Deshaun Watson', 'QB', 4, 75, 21),
@@ -1540,67 +1561,68 @@ INSERT INTO teams (team_id, name, city, stadium)
 VALUES (22, 'Pittsburgh Steelers', 'Pittsburgh', 'Acrisure Stadium');
 
 -- =====================================
--- Players for Team 23
+-- Players for Team 22
 -- =====================================
+-- BLOCK 22
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
-(989, 'Russell Wilson', 'QB', 3, 71, 23),
-(990, 'Justin Fields', 'QB', 2, 75, 23),
-(991, 'Kyle Allen', 'QB', 14, 75, 23),
+(989, 'Russell Wilson', 'QB', 3, 71, 22),
+(990, 'Justin Fields', 'QB', 2, 75, 22),
+(991, 'Kyle Allen', 'QB', 14, 75, 22),
 
 -- Running Backs
-(992, 'Najee Harris', 'RB', 22, 74, 23),
-(993, 'Jaylen Warren', 'RB', 30, 70, 23),
-(994, 'Cordarrelle Patterson', 'RB/KR', 84, 73, 23),
+(992, 'Najee Harris', 'RB', 22, 74, 22),
+(993, 'Jaylen Warren', 'RB', 30, 70, 22),
+(994, 'Cordarrelle Patterson', 'RB/KR', 84, 73, 22),
 
 -- Wide Receivers
-(995, 'George Pickens', 'WR', 1, 75, 23),
-(996, 'Roman Wilson', 'WR', 10, 71, 23),
-(997, 'Van Jefferson', 'WR', 11, 73, 23),
-(998, 'Calvin Austin III', 'WR', 19, 68, 23),
-(999, 'Quez Watkins', 'WR', 16, 74, 23),
+(995, 'George Pickens', 'WR', 1, 75, 22),
+(996, 'Roman Wilson', 'WR', 10, 71, 22),
+(997, 'Van Jefferson', 'WR', 11, 73, 22),
+(998, 'Calvin Austin III', 'WR', 19, 68, 22),
+(999, 'Quez Watkins', 'WR', 16, 74, 22),
 
 -- Tight Ends
-(1000, 'Pat Freiermuth', 'TE', 88, 76, 23),
-(1001, 'Connor Heyward', 'TE', 83, 73, 23),
-(1002, 'Darnell Washington', 'TE', 80, 78, 23),
+(1000, 'Pat Freiermuth', 'TE', 88, 76, 22),
+(1001, 'Connor Heyward', 'TE', 83, 73, 22),
+(1002, 'Darnell Washington', 'TE', 80, 78, 22),
 
 -- Offensive Line
-(1003, 'Troy Fautanu', 'T', 76, 77, 23),
-(1004, 'James Daniels', 'G', 78, 75, 23),
-(1005, 'Zach Frazier', 'C', 54, 75, 23),
-(1006, 'Isaac Seumalo', 'G', 73, 76, 23),
-(1007, 'Broderick Jones', 'T', 77, 77, 23),
-(1008, 'Dan Moore Jr.', 'T', 65, 76, 23),
-(1009, 'Nate Herbig', 'G', 71, 76, 23),
+(1003, 'Troy Fautanu', 'T', 76, 77, 22),
+(1004, 'James Daniels', 'G', 78, 75, 22),
+(1005, 'Zach Frazier', 'C', 54, 75, 22),
+(1006, 'Isaac Seumalo', 'G', 73, 76, 22),
+(1007, 'Broderick Jones', 'T', 77, 77, 22),
+(1008, 'Dan Moore Jr.', 'T', 65, 76, 22),
+(1009, 'Nate Herbig', 'G', 71, 76, 22),
 
 -- Defensive Line
-(1010, 'Cameron Heyward', 'DT', 97, 77, 23),
-(1011, 'Keeanu Benton', 'DT', 95, 75, 23),
-(1012, 'Larry Ogunjobi', 'DT', 99, 75, 23),
-(1013, 'DeMarvin Leal', 'DL', 98, 76, 23),
+(1010, 'Cameron Heyward', 'DT', 97, 77, 22),
+(1011, 'Keeanu Benton', 'DT', 95, 75, 22),
+(1012, 'Larry Ogunjobi', 'DT', 99, 75, 22),
+(1013, 'DeMarvin Leal', 'DL', 98, 76, 22),
 
 -- Linebackers
-(1014, 'T.J. Watt', 'OLB', 90, 76, 23),
-(1015, 'Alex Highsmith', 'OLB', 56, 75, 23),
-(1016, 'Patrick Queen', 'ILB', 6, 73, 23),
-(1017, 'Elandon Roberts', 'ILB', 50, 71, 23),
-(1018, 'Nick Herbig', 'OLB', 53, 74, 23),
-(1019, 'Cole Holcomb', 'ILB', 55, 74, 23),
+(1014, 'T.J. Watt', 'OLB', 90, 76, 22),
+(1015, 'Alex Highsmith', 'OLB', 56, 75, 22),
+(1016, 'Patrick Queen', 'ILB', 6, 73, 22),
+(1017, 'Elandon Roberts', 'ILB', 50, 71, 22),
+(1018, 'Nick Herbig', 'OLB', 53, 74, 22),
+(1019, 'Cole Holcomb', 'ILB', 55, 74, 22),
 
 -- Defensive Backs
-(1020, 'Minkah Fitzpatrick', 'S', 39, 73, 23),
-(1021, 'Joey Porter Jr.', 'CB', 24, 73, 23),
-(1022, 'Donte Jackson', 'CB', 26, 70, 23),
-(1023, 'DeShon Elliott', 'S', 28, 72, 23),
-(1024, 'Ryan Watts', 'CB', 25, 75, 23),
-(1025, 'Cameron Brown', 'S', 31, 72, 23),
-(1026, 'Darius Rush', 'CB', 20, 74, 23),
+(1020, 'Minkah Fitzpatrick', 'S', 39, 73, 22),
+(1021, 'Joey Porter Jr.', 'CB', 24, 73, 22),
+(1022, 'Donte Jackson', 'CB', 26, 70, 22),
+(1023, 'DeShon Elliott', 'S', 28, 72, 22),
+(1024, 'Ryan Watts', 'CB', 30, 75, 22),
+(1025, 'Cameron Brown', 'S', 26, 72, 22),
+(1026, 'Darius Rush', 'CB', 20, 74, 22),
 
 -- Special Teams
-(1027, 'Chris Boswell', 'K', 9, 72, 23),
-(1028, 'Cameron Johnston', 'P', 15, 72, 23),
-(1029, 'Christian Kuntz', 'LS', 46, 73, 23);
+(1027, 'Chris Boswell', 'K', 9, 72, 22),
+(1028, 'Cameron Johnston', 'P', 15, 72, 22),
+(1029, 'Christian Kuntz', 'LS', 46, 73, 22);
 
 -- =====================================
 -- Team 23: Tennessee Titans
@@ -1611,67 +1633,68 @@ VALUES (23, 'Tennessee Titans', 'Nashville', 'Nissan Stadium');
 -- =====================================
 -- Players for Team 23
 -- =====================================
+-- BLOCK 23
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
-(1074, 'Cam Ward', 'QB', 1, 74, 25),
-(1075, 'Brandon Allen', 'QB', 10, 74, 25),
-(1076, 'Mason Rudolph', 'QB', 11, 77, 25),
+(1074, 'Cam Ward', 'QB', 1, 74, 23),
+(1075, 'Brandon Allen', 'QB', 10, 74, 23),
+(1076, 'Mason Rudolph', 'QB', 11, 77, 23),
 
 -- Running Backs
-(1077, 'Tony Pollard', 'RB', 20, 72, 25),
-(1078, 'Tyjae Spears', 'RB', 2, 71, 25),
-(1079, 'Kalel Mullings', 'RB', 31, 74, 25),
-(1080, 'Julius Chestnut', 'RB', 36, 71, 25),
+(1077, 'Tony Pollard', 'RB', 20, 72, 23),
+(1078, 'Tyjae Spears', 'RB', 2, 71, 23),
+(1079, 'Kalel Mullings', 'RB', 26, 74, 23),
+(1080, 'Julius Chestnut', 'RB', 36, 71, 23),
 
 -- Wide Receivers
-(1081, 'Calvin Ridley', 'WR', 0, 73, 25),
-(1082, 'DeAndre Hopkins', 'WR', 10, 73, 25),
-(1083, 'Tyler Boyd', 'WR', 83, 73, 25),
-(1084, 'Treylon Burks', 'WR', 16, 74, 25),
-(1085, 'Nick Westbrook-Ikhine', 'WR', 15, 75, 25),
-(1086, 'Van Jefferson', 'WR', 11, 73, 25),  
+(1081, 'Calvin Ridley', 'WR', 0, 73, 23),
+(1082, 'DeAndre Hopkins', 'WR', 10, 73, 23),
+(1083, 'Tyler Boyd', 'WR', 83, 73, 23),
+(1084, 'Treylon Burks', 'WR', 16, 74, 23),
+(1085, 'Nick Westbrook-Ikhine', 'WR', 15, 75, 23),
+(1086, 'Van Jefferson', 'WR', 11, 73, 23),  
 
 -- Tight Ends
-(1087, 'Chig Okonkwo', 'TE', 85, 75, 25),
-(1088, 'Josh Whyle', 'TE', 84, 78, 25),
-(1089, 'Nick Vannett', 'TE', 80, 77, 25),
+(1087, 'Chig Okonkwo', 'TE', 85, 75, 23),
+(1088, 'Josh Whyle', 'TE', 84, 78, 23),
+(1089, 'Nick Vannett', 'TE', 80, 77, 23),
 
 -- Offensive Line
-(1090, 'JC Latham', 'T', 55, 78, 25),
-(1091, 'Peter Skoronski', 'G', 77, 76, 25),
-(1092, 'Lloyd Cushenberry III', 'C', 79, 76, 25),
-(1093, 'Kevin Zeitler', 'G', 70, 76, 25),
-(1094, 'Nicholas Petit-Frere', 'T', 72, 77, 25),
-(1095, 'Dan Moore Jr.', 'T', 75, 77, 25),
-(1096, 'Dillon Radunz', 'G', 74, 76, 25),
+(1090, 'JC Latham', 'T', 55, 78, 23),
+(1091, 'Peter Skoronski', 'G', 77, 76, 23),
+(1092, 'Lloyd Cushenberry III', 'C', 79, 76, 23),
+(1093, 'Kevin Zeitler', 'G', 70, 76, 23),
+(1094, 'Nicholas Petit-Frere', 'T', 72, 77, 23),
+(1095, 'Dan Moore Jr.', 'T', 75, 77, 23),
+(1096, 'Dillon Radunz', 'G', 74, 76, 23),
 
 -- Defensive Line
-(1097, 'Jeffery Simmons', 'DT', 98, 76, 25),
-(1098, 'Vondre Sweat', 'NT', 93, 76, 25),
-(1099, 'Sebastian Joseph-Day', 'DT', 69, 76, 25),
-(1100, 'Keondre Coburn', 'DT', 99, 74, 25),
+(1097, 'Jeffery Simmons', 'DT', 98, 76, 23),
+(1098, 'Vondre Sweat', 'NT', 93, 76, 23),
+(1099, 'Sebastian Joseph-Day', 'DT', 69, 76, 23),
+(1100, 'Keondre Coburn', 'DT', 99, 74, 23),
 
 -- Linebackers
-(1101, 'Harold Landry III', 'OLB', 58, 75, 25),
-(1102, 'Kenneth Murray Jr.', 'ILB', 56, 75, 25),
-(1103, 'Arden Key', 'OLB', 49, 77, 25),
-(1104, 'Ernest Jones', 'ILB', 53, 73, 25),
-(1105, 'Jack Gibbens', 'LB', 54, 75, 25),
-(1106, 'Cedric Gray', 'LB', 33, 74, 25),
+(1101, 'Harold Landry III', 'OLB', 58, 75, 23),
+(1102, 'Kenneth Murray Jr.', 'ILB', 56, 75, 23),
+(1103, 'Arden Key', 'OLB', 49, 77, 23),
+(1104, 'Ernest Jones', 'ILB', 53, 73, 23),
+(1105, 'Jack Gibbens', 'LB', 54, 75, 23),
+(1106, 'Cedric Gray', 'LB', 33, 74, 23),
 
 -- Defensive Backs
-(1107, 'Jarius Sneed', 'CB', 38, 73, 25),
-(1108, 'Chidobe Awuzie', 'CB', 24, 72, 25),
-(1109, 'Amani Hooker', 'S', 37, 71, 25),
-(1110, 'Quandre Diggs', 'S', 26, 70, 25),
-(1111, 'Roger McCreary', 'CB', 27, 70, 25),
-(1112, 'Mike Brown', 'S', 44, 73, 25),
-(1113, 'Jarvis Brownlee Jr.', 'CB', 30, 72, 25),
+(1107, 'Jarius Sneed', 'CB', 38, 73, 23),
+(1108, 'Chidobe Awuzie', 'CB', 24, 72, 23),
+(1109, 'Amani Hooker', 'S', 37, 71, 23),
+(1110, 'Quandre Diggs', 'S', 26, 70, 23),
+(1111, 'Roger McCreary', 'CB', 27, 70, 23),
+(1112, 'Mike Brown', 'S', 44, 73, 23),
+(1113, 'Jarvis Brownlee Jr.', 'CB', 30, 72, 23),
 
 -- Special Teams
-(1114, 'Nick Folk', 'K', 2, 70, 25),
-(1115, 'Ryan Stonehouse', 'P', 4, 72, 25),
-(1116, 'Morgan Cox', 'LS', 46, 76, 25);
+(1114, 'Nick Folk', 'K', 2, 70, 23),
+(1115, 'Ryan Stonehouse', 'P', 4, 72, 23),
+(1116, 'Morgan Cox', 'LS', 46, 76, 23);
 
 -- =====================================
 -- Team 24: Washington Commanders
@@ -1682,124 +1705,126 @@ VALUES (24, 'Washington Commanders', 'Landover', 'FedExField');
 -- =====================================
 -- Players for Team 24
 -- =====================================
+-- BLOCK 24
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
-(1117, 'Jayden Daniels', 'QB', 5, 75, 26),
-(1118, 'Marcus Mariota', 'QB', 0, 75, 26),
-(1119, 'Jeff Driskel', 'QB', 14, 76, 26),
+(1117, 'Jayden Daniels', 'QB', 5, 75, 24),
+(1118, 'Marcus Mariota', 'QB', 0, 75, 24),
+(1119, 'Jeff Driskel', 'QB', 14, 76, 24),
 
 -- Running Backs
-(1120, 'Austin Ekeler', 'RB', 30, 70, 26),
-(1121, 'Brian Robinson Jr.', 'RB', 8, 73, 26),
-(1122, 'Chris Rodriguez Jr.', 'RB', 32, 72, 26),
-(1123, 'Mike Davis', 'RB', 28, 71, 26),
+(1120, 'Austin Ekeler', 'RB', 30, 70, 24),
+(1121, 'Brian Robinson Jr.', 'RB', 8, 73, 24),
+(1122, 'Chris Rodriguez Jr.', 'RB', 32, 72, 24),
+(1123, 'Mike Davis', 'RB', 28, 71, 24),
 
 -- Wide Receivers
-(1124, 'Terry McLaurin', 'WR', 17, 72, 26),
-(1125, 'Jahan Dotson', 'WR', 1, 71, 26),
-(1126, 'Olamide Zaccheaus', 'WR', 13, 69, 26),
-(1127, 'Luke McCaffrey', 'WR', 18, 73, 26),
-(1128, 'Dyami Brown', 'WR', 2, 73, 26),
+(1124, 'Terry McLaurin', 'WR', 17, 72, 24),
+(1125, 'Jahan Dotson', 'WR', 1, 71, 24),
+(1126, 'Olamide Zaccheaus', 'WR', 13, 69, 24),
+(1127, 'Luke McCaffrey', 'WR', 18, 73, 24),
+(1128, 'Dyami Brown', 'WR', 2, 73, 24),
 
 -- Tight Ends
-(1129, 'Zach Ertz', 'TE', 86, 77, 26),
-(1130, 'Ben Sinnott', 'TE', 82, 76, 26),
-(1131, 'Cole Turner', 'TE', 80, 78, 26),
+(1129, 'Zach Ertz', 'TE', 86, 77, 24),
+(1130, 'Ben Sinnott', 'TE', 82, 76, 24),
+(1131, 'Cole Turner', 'TE', 80, 78, 24),
 
 -- Offensive Line
-(1132, 'Cornelius Lucas', 'T', 78, 79, 26),
-(1133, 'Nick Allegretti', 'G', 61, 75, 26),
-(1134, 'Tyler Biadasz', 'C', 77, 76, 26),
-(1135, 'Sam Cosmi', 'T/G', 76, 78, 26),
-(1136, 'Andrew Wylie', 'T', 75, 77, 26),
-(1137, 'Brandon Coleman', 'G', 67, 76, 26),
-(1138, 'Trent Scott', 'T', 72, 78, 26),
+(1132, 'Cornelius Lucas', 'T', 78, 79, 24),
+(1133, 'Nick Allegretti', 'G', 61, 75, 24),
+(1134, 'Tyler Biadasz', 'C', 77, 76, 24),
+(1135, 'Sam Cosmi', 'T/G', 76, 78, 24),
+(1136, 'Andrew Wylie', 'T', 75, 77, 24),
+(1137, 'Brandon Coleman', 'G', 67, 76, 24),
+(1138, 'Trent Scott', 'T', 72, 78, 24),
 
 -- Defensive Line
-(1139, 'Jonathan Allen', 'DT', 93, 75, 26),
-(1140, 'Daron Payne', 'DT', 94, 75, 26),
-(1141, 'Efe Obada', 'DE', 92, 77, 26),
-(1142, 'Dorance Armstrong', 'DE', 91, 75, 26),
-(1143, 'Jalyn Phillips', 'DT', 95, 74, 26),
-(1144, 'Javontae Jean-Baptiste', 'DE', 58, 77, 26),
+(1139, 'Jonathan Allen', 'DT', 93, 75, 24),
+(1140, 'Daron Payne', 'DT', 94, 75, 24),
+(1141, 'Efe Obada', 'DE', 92, 77, 24),
+(1142, 'Dorance Armstrong', 'DE', 91, 75, 24),
+(1143, 'Jalyn Phillips', 'DT', 95, 74, 24),
+(1144, 'Javontae Jean-Baptiste', 'DE', 58, 77, 24),
 
 -- Linebackers
-(1145, 'Bobby Wagner', 'LB', 54, 73, 26),
-(1146, 'Frankie Luvu', 'LB', 51, 72, 26),
-(1147, 'Jamin Davis', 'LB', 52, 75, 26),
-(1148, 'Jordan Magee', 'LB', 45, 73, 26),
-(1149, 'Derrick Gore', 'LB', 72, 26),
+(1145, 'Bobby Wagner', 'LB', 54, 73, 24),
+(1146, 'Frankie Luvu', 'LB', 51, 72, 24),
+(1147, 'Jamin Davis', 'LB', 52, 75, 24),
+(1148, 'Jordan Magee', 'LB', 45, 73, 24),
+(1149, 'Derrick Gore', 'LB', 72, 73, 24),
 
 -- Defensive Backs
-(1152, 'Darrick Forrest', 'S', 22, 73, 26),
-(1153, 'Mike Sainristil', 'CB', 34, 70, 26),
-(1154, 'Noah Igbinoghene', 'CB', 24, 71, 26),
-(1155, 'Quan Martin', 'S', 33, 73, 26),
-(1156, 'Emmanuel Forbes', 'CB', 16, 73, 26),
+(1152, 'Darrick Forrest', 'S', 22, 73, 24),
+(1153, 'Mike Sainristil', 'CB', 34, 70, 24),
+(1154, 'Noah Igbinoghene', 'CB', 24, 71, 24),
+(1155, 'Quan Martin', 'S', 33, 73, 24),
+(1156, 'Emmanuel Forbes', 'CB', 16, 73, 24),
 
 -- Special Teams
-(1157, 'Joey Slye', 'K', 12, 70, 26),
-(1158, 'Tress Way', 'P', 5, 74, 26),
-(1159, 'Tyler Ott', 'LS', 46, 75, 26);
+(1157, 'Joey Slye', 'K', 12, 70, 24),
+(1158, 'Tress Way', 'P', 5, 74, 24),
+(1159, 'Tyler Ott', 'LS', 46, 75, 24);
 
 -- =====================================
 -- Team 25: Jacksonville Jaguars
 -- =====================================
 INSERT INTO teams (team_id, name, city, stadium)
-VALUES (25, 'Jacksonville Jaguars', 'Jacksonville', 'EverBank Stadium');
+VALUES  (25, 'Jacksonville Jaguars', 'Jacksonville', 'EverBank Stadium');
 
 -- =====================================
 -- Players for Team 25
 -- =====================================
+-- BLOCK 25
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
-(1280, 'Trevor Lawrence', 'QB', 16, 78, 30),
-(1281, 'Nick Mullens', 'QB', 14, 73, 30),
+(1280, 'Trevor Lawrence', 'QB', 16, 78, 25),
+(1281, 'Nick Mullens', 'QB', 14, 73, 25),
 
 -- Running Backs
-(1282, 'Travis Etienne Jr.', 'RB', 1, 70, 30),
-(1283, 'LeQuint Allen Jr.', 'RB', 36, 72, 30),
-(1284, 'Bhayshul Tuten', 'RB', 33, 69, 30),
+(1282, 'Travis Etienne Jr.', 'RB', 1, 70, 25),
+(1283, 'LeQuint Allen Jr.', 'RB', 36, 72, 25),
+(1284, 'Bhayshul Tuten', 'RB', 33, 69, 25),
 
 -- Wide Receivers
-(1285, 'Brian Thomas Jr.', 'WR', 7, 74, 30),
-(1286, 'Jakobi Meyers', 'WR', 3, 73, 30),
-(1287, 'Tim Patrick', 'WR', 17, 77, 30),
-(1288, 'Parker Washington', 'WR', 11, 70, 30),
+(1285, 'Brian Thomas Jr.', 'WR', 7, 74, 25),
+(1286, 'Jakobi Meyers', 'WR', 3, 73, 25),
+(1287, 'Tim Patrick', 'WR', 17, 77, 25),
+(1288, 'Parker Washington', 'WR', 11, 70, 25),
 
 -- Tight Ends
-(1289, 'Brenton Strange', 'TE', 85, 76, 30),
-(1290, 'Hunter Long', 'TE', 84, 77, 30),
-(1291, 'Johnny Mundt', 'TE', 86, 76, 30),
+(1289, 'Brenton Strange', 'TE', 85, 76, 25),
+(1290, 'Hunter Long', 'TE', 84, 77, 25),
+(1291, 'Johnny Mundt', 'TE', 86, 76, 25),
 
 -- Offensive Line
-(1292, 'Anton Harrison', 'T', 77, 77, 30),
-(1293, 'Ezra Cleveland', 'G', 76, 78, 30),
-(1294, 'Robert Hainsey', 'C', 73, 76, 30),
-(1295, 'Patrick Mekari', 'G', 65, 76, 30),
-(1296, 'Walker Little', 'T', 72, 79, 30),
-(1297, 'Wyatt Milum', 'T', 64, 78, 30),
+(1292, 'Anton Harrison', 'T', 77, 77, 25),
+(1293, 'Ezra Cleveland', 'G', 76, 78, 25),
+(1294, 'Robert Hainsey', 'C', 73, 76, 25),
+(1295, 'Patrick Mekari', 'G', 65, 76, 25),
+(1296, 'Walker Little', 'T', 72, 79, 25),
+(1297, 'Wyatt Milum', 'T', 64, 78, 25),
 
 -- Defensive Line
-(1298, 'Arik Armstead', 'DT', 91, 79, 30),
-(1299, 'DaVon Hamilton', 'DT', 52, 76, 30),
-(1300, 'Maason Smith', 'DT', 94, 77, 30),
+(1298, 'Arik Armstead', 'DT', 91, 79, 25),
+(1299, 'DaVon Hamilton', 'DT', 52, 76, 25),
+(1300, 'Maason Smith', 'DT', 94, 77, 25),
 
 -- Linebackers
-(1301, 'Josh Hines-Allen', 'DE', 41, 77, 30),
-(1302, 'Travon Walker', 'DE', 44, 77, 30),
-(1303, 'Foyesade Oluokun', 'LB', 23, 75, 30),
-(1304, 'Devin Lloyd', 'LB', 0, 75, 30),
+(1301, 'Josh Hines-Allen', 'DE', 41, 77, 25),
+(1302, 'Travon Walker', 'DE', 44, 77, 25),
+(1303, 'Foyesade Oluokun', 'LB', 23, 75, 25),
+(1304, 'Devin Lloyd', 'LB', 0, 75, 25),
 
 -- Defensive Backs
-(1305, 'Greg Newsome II', 'CB', 6, 73, 30),
-(1306, 'Antonio Johnson', 'S', 26, 74, 30),
-(1307, 'Jourdan Lewis', 'CB', 2, 70, 30),
-(1308, 'Andrew Wingard', 'S', 42, 72, 30),
+(1305, 'Greg Newsome II', 'CB', 6, 73, 25),
+(1306, 'Antonio Johnson', 'S', 26, 74, 25),
+(1307, 'Jourdan Lewis', 'CB', 2, 70, 25),
+(1308, 'Andrew Wingard', 'S', 42, 72, 25),
 
 -- Special Teams
-(1309, 'Cam Little', 'K', 39, 73, 30),
-(1310, 'Logan Cooke', 'P', 9, 77, 30);
+(1309, 'Cam Little', 'K', 39, 73, 25),
+(1310, 'Logan Cooke', 'P', 9, 77, 25);
 
 -- =====================================
 -- Team 26: Los Angeles Chargers
@@ -1810,56 +1835,57 @@ VALUES (26, 'Los Angeles Chargers', 'Inglewood', 'SoFi Stadium');
 -- =====================================
 -- Players for Team 26
 -- =====================================
+-- BLOCK 26
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
-(1311, 'Justin Herbert', 'QB', 10, 78, 31),
-(1312, 'Trey Lance', 'QB', 5, 76, 31),
+(1311, 'Justin Herbert', 'QB', 10, 78, 26),
+(1312, 'Trey Lance', 'QB', 5, 76, 26),
 
 -- Running Backs
-(1313, 'J.K. Dobbins', 'RB', 27, 70, 31),
-(1314, 'Gus Edwards', 'RB', 4, 73, 31),
-(1315, 'Kimani Vidal', 'RB', 30, 68, 31),
+(1313, 'J.K. Dobbins', 'RB', 27, 70, 26),
+(1314, 'Gus Edwards', 'RB', 4, 73, 26),
+(1315, 'Kimani Vidal', 'RB', 30, 68, 26),
 
 -- Wide Receivers
-(1316, 'Quentin Johnston', 'WR', 1, 74, 31),
-(1317, 'Ladd McConkey', 'WR', 15, 72, 31),
-(1318, 'Derius Davis', 'WR', 12, 68, 31),
-(1319, 'DJ Chark', 'WR', 9, 75, 31),
+( 1316, 'Quentin Johnston', 'WR', 1, 74, 26),
+( 1317, 'Ladd McConkey', 'WR', 15, 72, 26),
+( 1318, 'Derius Davis', 'WR', 12, 68, 26),
+( 1319, 'DJ Chark', 'WR', 9, 75, 26),
 
 -- Tight Ends
-(1320, 'Will Dissly', 'TE', 89, 76, 31),
-(1321, 'Tyler Conklin', 'TE', 83, 75, 31),
-(1322, 'Hayden Hurst', 'TE', 88, 76, 31),
+(1320, 'Will Dissly', 'TE', 89, 76, 26),
+(1321, 'Tyler Conklin', 'TE', 83, 75, 26),
+(1322, 'Hayden Hurst', 'TE', 88, 76, 26),
 
 -- Offensive Line
-(1323, 'Rashawn Slater', 'T', 70, 77, 31),
-(1324, 'Joe Alt', 'T', 76, 80, 31),
-(1325, 'Zion Johnson', 'G', 77, 75, 31),
-(1326, 'Bradley Bozeman', 'C', 75, 77, 31),
-(1327, 'Trey Pipkins III', 'T', 79, 78, 31),
+(1323, 'Rashawn Slater', 'T', 70, 77, 26),
+(1324, 'Joe Alt', 'T', 76, 80, 26),
+(1325, 'Zion Johnson', 'G', 77, 75, 26),
+(1326, 'Bradley Bozeman', 'C', 75, 77, 26),
+(1327, 'Trey Pipkins III', 'T', 79, 78, 26),
 
 -- Defensive Line
-(1328, 'Joey Bosa', 'LB', 97, 77, 31),
-(1329, 'Khalil Mack', 'LB', 52, 75, 31),
-(1330, 'Justin Eboigbe', 'DL', 92, 77, 31),
-(1331, 'Poona Ford', 'DT', 95, 71, 31),
-(1332, 'Jamaree Caldwell', 'DT', 99, 73, 31),
+(1328, 'Joey Bosa', 'LB', 97, 77, 26),
+(1329, 'Khalil Mack', 'LB', 52, 75, 26),
+(1330, 'Justin Eboigbe', 'DL', 92, 77, 26),
+(1331, 'Poona Ford', 'DT', 95, 71, 26),
+(1332, 'Jamaree Caldwell', 'DT', 99, 73, 26),
 
 -- Linebackers
-(1333, 'Junior Colson', 'LB', 25, 75, 31),
-(1334, 'Daiyan Henley', 'LB', 0, 73, 31),
-(1335, 'Tuli Tuipulotu', 'OLB', 45, 75, 31),
+(1333, 'Junior Colson', 'LB', 30, 75, 26),
+(1334, 'Daiyan Henley', 'LB', 0, 73, 26),
+(1335, 'Tuli Tuipulotu', 'OLB', 45, 75, 26),
 
 -- Defensive Backs
-(1336, 'Derwin James Jr.', 'S', 3, 74, 31),
-(1337, 'Asante Samuel Jr.', 'CB', 20, 70, 31),
-(1338, 'Kristian Fulton', 'CB', 7, 71, 31),
-(1339, 'Alohi Gilman', 'S', 32, 70, 31),
-(1340, 'Elijah Molden', 'CB', 22, 70, 31),
+(1336, 'Derwin James Jr.', 'S', 3, 74, 26),
+(1337, 'Asante Samuel Jr.', 'CB', 20, 70, 26),
+(1338, 'Kristian Fulton', 'CB', 7, 71, 26),
+(1339, 'Alohi Gilman', 'S', 32, 70, 26),
+(1340, 'Elijah Molden', 'CB', 22, 70, 26),
 
 -- Special Teams
-(1341, 'Cameron Dicker', 'K', 11, 73, 31),
-(1342, 'J.K. Scott', 'P', 16, 77, 31);
+(1341, 'Cameron Dicker', 'K', 11, 73, 26),
+(1342, 'J.K. Scott', 'P', 16, 77, 26);
 
 -- =====================================
 -- Team 27: Chicago Bears
@@ -1870,6 +1896,7 @@ VALUES (27, 'Chicago Bears', 'Chicago', 'Soldier Field');
 -- =====================================
 -- Players for Team 27
 -- =====================================
+-- BLOCK 27
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1343, 'Caleb Williams', 'QB', 18, 73, 27),
@@ -1879,7 +1906,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Running Backs
 (1346, 'D''Andre Swift', 'RB', 4, 68, 27),
 (1347, 'Travis Homer', 'RB', 21, 70, 27),
-(1348, 'Kyle Monangai', 'RB', 25, 68, 27),
+(1348, 'Kyle Monangai', 'RB', 30, 68, 27),
 
 -- Wide Receivers
 (1349, 'DJ Moore', 'WR', 2, 72, 27),
@@ -1916,7 +1943,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (1370, 'Jaylon Johnson', 'CB', 1, 72, 27),
 (1371, 'Kyler Gordon', 'CB', 6, 71, 27),
 (1372, 'Jaquan Brisker', 'S', 9, 73, 27),
-(1373, 'Kevin Byard III', 'S', 31, 71, 27),
+(1373, 'Kevin Byard III', 'S', 26, 71, 27),
 (1374, 'Tyrique Stevenson', 'CB', 29, 72, 27),
 
 -- Special Teams
@@ -1932,6 +1959,7 @@ VALUES (28, 'Carolina Panthers', 'Charlotte', 'Bank of America Stadium');
 -- =====================================
 -- Players for Team 28
 -- =====================================
+-- BLOCK 28
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1377, 'Bryce Young', 'QB', 9, 70, 28),
@@ -1995,6 +2023,7 @@ VALUES (29, 'Detroit Lions', 'Detroit', 'Ford Field');
 -- =====================================
 -- Players for Team 29
 -- =====================================
+-- BLOCK 29
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1412, 'Jared Goff', 'QB', 16, 76, 29),
@@ -2038,7 +2067,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 
 -- Defensive Backs
 (1438, 'Brian Branch', 'DB', 32, 72, 29),
-(1439, 'Kerby Joseph', 'S', 31, 73, 29),
+(1439, 'Kerby Joseph', 'S', 26, 73, 29),
 (1440, 'D.J. Reed', 'CB', 4, 69, 29),
 (1441, 'Amik Robertson', 'CB', 21, 68, 29),
 (1442, 'Avonte Maddox', 'CB', 29, 69, 29),
@@ -2059,6 +2088,7 @@ VALUES (30, 'Minnesota Vikings', 'Minneapolis', 'U.S. Bank Stadium');
 -- =====================================
 -- Players for Team 30
 -- =====================================
+-- BLOCK 30
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1447, 'J.J. McCarthy', 'QB', 9, 75, 30),
@@ -2118,11 +2148,12 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Team 31: New England Patriots
 -- =====================================
 INSERT INTO teams (team_id, name, city, stadium)
-VALUES (31, 'New England Patriots', 'Foxborough', 'Gillette Stadium');
+VALUES  (31, 'New England Patriots', 'Foxborough', 'Gillette Stadium');
 
 -- =====================================
 -- Players for Team 31
 -- =====================================
+-- BLOCK 31
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1483, 'Jacoby Brissett', 'QB', 7, 75, 31),
@@ -2167,7 +2198,7 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 -- Defensive Backs
 (1509, 'Christian Gonzalez', 'CB', 19, 74, 31),
 (1510, 'Kyle Dugger', 'S', 23, 75, 31),
-(1511, 'Marcus Jones', 'CB', 25, 68, 31),
+(1511, 'Marcus Jones', 'CB', 30, 68, 31),
 (1512, 'Jabril Peppers', 'S', 5, 71, 31),
 (1513, 'Alex Austin', 'CB', 37, 73, 31),
 
@@ -2186,6 +2217,7 @@ VALUES (32, 'New York Giants', 'East Rutherford', 'MetLife Stadium');
 -- =====================================
 -- Players for Team 32
 -- =====================================
+-- BLOCK 32
 INSERT INTO players (player_id, name, position, jersey_number, height_inches, team_id) VALUES
 -- Quarterbacks
 (1517, 'Drew Lock', 'QB', 2, 75, 32),
@@ -2228,10 +2260,10 @@ INSERT INTO players (player_id, name, position, jersey_number, height_inches, te
 (1542, 'Carter Coughlin', 'OLB', 47, 75, 32),
 
 -- Defensive Backs
-(1543, 'Deonte Banks', 'CB', 25, 73, 32),
+(1543, 'Deonte Banks', 'CB', 30, 73, 32),
 (1544, 'Javaris Davis', 'CB', 33, 70, 32),
 (1545, 'Jason Pinnock', 'S', 28, 73, 32),
-(1546, 'Tyler Nubin', 'S', 31, 74, 32),
+(1546, 'Tyler Nubin', 'S', 26, 74, 32),
 (1547, 'Cor''Dale Flott', 'CB', 24, 72, 32),
 
 -- Special Teams
