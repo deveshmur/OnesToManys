@@ -25,7 +25,7 @@ public class TeamService {
 
     public Team getTeamById(Long teamId) {
         return teamRepository.findById(teamId)
-                .orElseThrow(() -> new RuntimeException("Team not found with id " + teamId));
+            .orElseThrow(() -> new RuntimeException("Team not found with id " + teamId));
     }
 
     public Team createTeam(Team team) {
