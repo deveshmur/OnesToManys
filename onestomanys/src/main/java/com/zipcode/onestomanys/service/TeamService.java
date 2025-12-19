@@ -5,6 +5,7 @@ import com.zipcode.onestomanys.model.Team;
 import com.zipcode.onestomanys.repository.PlayerRepository;
 import com.zipcode.onestomanys.repository.TeamRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -36,6 +37,7 @@ public class TeamService {
         return playerRepository.findByTeam_TeamId(teamId);
     }
 
+    @Transactional
     public Player createPlayerForTeam(Long teamId, Player player) {
         Team team = getTeamById(teamId); 
         team.addPlayer(player);
