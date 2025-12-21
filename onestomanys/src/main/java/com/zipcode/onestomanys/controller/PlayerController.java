@@ -1,8 +1,7 @@
 package com.zipcode.onestomanys.controller;
 
-import com.zipcode.onestomanys.model.Player;
+import com.zipcode.onestomanys.dto.PlayerResponse;
 import com.zipcode.onestomanys.service.PlayerService;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,18 +17,12 @@ public class PlayerController {
     }
 
     @GetMapping
-    public List<Player> getAllPlayers() {
+    public List<PlayerResponse> getAllPlayers() {
         return playerService.getAllPlayers();
     }
 
     @GetMapping("/{playerId}")
-    public Player getPlayerById(@PathVariable Long playerId) {
+    public PlayerResponse getPlayerById(@PathVariable Long playerId) {
         return playerService.getPlayerById(playerId);
-    }
-
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public Player createPlayer(@RequestBody Player player) {
-        return playerService.createPlayer(player);
     }
 }

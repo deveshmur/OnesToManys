@@ -1,8 +1,12 @@
 package com.zipcode.onestomanys.controller;
 
-import com.zipcode.onestomanys.model.Player;
-import com.zipcode.onestomanys.model.Team;
+import com.zipcode.onestomanys.dto.CreatePlayerRequest;
+import com.zipcode.onestomanys.dto.CreateTeamRequest;
+import com.zipcode.onestomanys.dto.PlayerResponse;
+import com.zipcode.onestomanys.dto.TeamResponse;
 import com.zipcode.onestomanys.service.TeamService;
+
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,31 +22,32 @@ public class TeamController {
         this.teamService = teamService;
     }
 
-    @GetMapping("/teams")
-    public List<Team> getAllTeams() {
+    @GetMapping
+    public List<TeamResponse> getAllTeams() {
         return teamService.getAllTeams();
     }
 
-    @GetMapping("/teams/{teamId}")
-    public Team getTeamById(@PathVariable Long teamId) {
-        return teamService.getTeamById(teamId);
+    @GetMapping("/{teamId}")
+    public TeamResponse getTeamById(@PathVariable Long teamId) {
+        return teamService.getTeamResponseById(teamId);
     }
 
-    @GetMapping("/teams/{teamId}/players")
-    public List<Player> getPlayersForTeam(@PathVariable Long teamId) {
+    @GetMapping("/{teamId}/players")
+    public List<PlayerResponse> getPlayersForTeam(@PathVariable Long teamId) {
         return teamService.getPlayersForTeam(teamId);
     }
 
-    @PostMapping("/teams")
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Team createTeam(@RequestBody Team team) {
-        return teamService.createTeam(team);
+    public TeamResponse createTeam(@Valid @RequestBody CreateTeamRequest request) {
+        return teamService.createTeam(request);
     }
 
-    @PostMapping("/teams/{teamId}/players")
+    @PostMapping("/{teamId}/players")
     @ResponseStatus(HttpStatus.CREATED)
-    public Player createPlayerForTeam(@PathVariable Long teamId,
-                                      @RequestBody Player player) {
-        return teamService.createPlayerForTeam(teamId, player);
+    public PlayerResponse createPlayerForTeam(
+            @PathVariable Long teamId,
+            @Valid @RequestBody CreatePlayerRequest request) {
+        return teamService.createPlayerForTeam(teamId, request);
     }
 }
