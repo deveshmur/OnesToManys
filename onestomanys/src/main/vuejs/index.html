@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFL Teams (Vue.js)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>NFL API (Vue.js)</h1>
+
+        <button @click="loadTeams">Load All Teams</button>
+        <button @click="loadPlayers">Load All Players</button>
+
+        <pre>{{ output }}</pre>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
