@@ -76,6 +76,32 @@ public class TeamService {
         );
     }
 
+    @Transactional
+    public TeamResponse updateTeam(Long teamId, CreateTeamRequest request) {
+        Team team = getTeamById(teamId);
+
+        team.setName(request.getName());
+        team.setCity(request.getCity());
+        team.setStadium(request.getStadium());
+
+        Team saved = teamRepository.save(team);
+
+        return new TeamResponse(
+                saved.getTeamId(),
+                saved.getName(),
+                saved.getCity(),
+                saved.getStadium()
+        );
+    }
+
+    @Transactional
+    public void deleteTeam(Long teamId) {
+        Team team = getTeamById(teamId);
+        // Because of cascade = ALL and orphanRemoval = true on Team.players,
+        // deleting the team will also delete its players.
+        teamRepository.delete(team);
+    }
+
     public List<PlayerResponse> getPlayersForTeam(Long teamId) {
         return playerRepository.findByTeam_TeamId(teamId)
                 .stream()
@@ -105,6 +131,39 @@ public class TeamService {
         Player saved = playerRepository.save(player);
 
         return new PlayerResponse(
+            saved.getPlayerId(),
+            saved.getName(),
+            saved.getPosition(),
+            saved.getJerseyNumber(),
+            saved.getHeightInches(),
+            team.getTeamId()
+        );
+    }
+
+    @Transactional
+    public PlayerResponse updatePlayerForTeam(Long teamId, Long playerId, CreatePlayerRequest request) {
+        Team team = getTeamById(teamId);
+
+        Player player = playerRepository.findById(playerId)
+                .orElseThrow(() ->
+                        new ResponseStatusException(HttpStatus.NOT_FOUND,
+                                "Player not found with id " + playerId));
+
+        if (player.getTeam() == null || !player.getTeam().getTeamId().equals(teamId)) {
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND,
+                    "Player with id " + playerId + " does not belong to team with id " + teamId
+            );
+        }
+
+        player.setName(request.getName());
+        player.setPosition(request.getPosition());
+        player.setJerseyNumber(request.getJerseyNumber());
+        player.setHeightInches(request.getHeightInches());
+
+        Player saved = playerRepository.save(player);
+
+        return new PlayerResponse(
                 saved.getPlayerId(),
                 saved.getName(),
                 saved.getPosition(),
@@ -112,5 +171,26 @@ public class TeamService {
                 saved.getHeightInches(),
                 team.getTeamId()
         );
+    }
+
+    @Transactional
+    public void deletePlayerFromTeam(Long teamId, Long playerId) {
+        Team team = getTeamById(teamId);
+
+        Player player = playerRepository.findById(playerId)
+                .orElseThrow(() ->
+                        new ResponseStatusException(HttpStatus.NOT_FOUND,
+                                "Player not found with id " + playerId));
+
+        if (player.getTeam() == null || !player.getTeam().getTeamId().equals(teamId)) {
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND,
+                    "Player with id " + playerId + " does not belong to team with id " + teamId
+            );
+        }
+
+        // Keep both sides in sync, then delete
+        team.removePlayer(player);
+        playerRepository.delete(player);
     }
 }
