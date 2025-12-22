@@ -1,18 +1,25 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
-export default function TeamCard({ team, onClick }) {
+export default function TeamCard({ team }) {
+  const navigate = useNavigate();
+
   return (
     <Box
       borderWidth="1px"
       borderRadius="lg"
-      p={4}
+      p={6}
       bg="blue.50"
-      _hover={{ bg: "blue.100" }}
+      _hover={{ bg: "blue.100", transform: "scale(1.03)" }}
+      transition="all 0.2s"
       cursor="pointer"
-      onClick={onClick}
+      onClick={() => navigate(`/teams/${team.teamId}`)}
+      boxShadow="sm"
     >
-      <Heading size="md">{team.name}</Heading>
-      <Text>{team.city}</Text>
+      <Heading size="md" mb={2}>
+        {team.name}
+      </Heading>
+      <Text fontWeight="semibold">{team.city}</Text>
       <Text fontSize="sm" color="gray.600">
         Stadium: {team.stadium}
       </Text>

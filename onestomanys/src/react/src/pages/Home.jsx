@@ -2,10 +2,12 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Box p={8}>
-      <Heading mb={4}>Welcome to the NFL Browser</Heading>
+    <Box p={10} textAlign="center">
+      <Heading mb={4} color="blue.700">
+        Welcome to the NFL Browser
+      </Heading>
       <Text fontSize="lg" color="gray.700">
-        Use the navigation above to explore NFL teams and their players.
+        Explore NFL teams and their players. Click “Database” to begin.
       </Text>
     </Box>
   );

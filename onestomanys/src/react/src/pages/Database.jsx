@@ -1,68 +1,47 @@
 import { useEffect, useState } from "react";
-import { SimpleGrid, Box, Heading, Spinner } from "@chakra-ui/react";
-import { getAllTeams, getPlayersForTeam } from "../utils/api";
+import { SimpleGrid, Box, Heading, Spinner, Alert, AlertIcon } from "@chakra-ui/react";
+import { getAllTeams } from "../utils/api";
 import TeamCard from "../components/TeamCard";
-import PlayerCard from "../components/PlayerCard";
 
 export default function Database() {
   const [teams, setTeams] = useState([]);
-  const [players, setPlayers] = useState([]);
-  const [selectedTeam, setSelectedTeam] = useState(null);
   const [loadingTeams, setLoadingTeams] = useState(true);
-  const [loadingPlayers, setLoadingPlayers] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function loadTeams() {
-      setLoadingTeams(true);
-      const data = await getAllTeams();
-      setTeams(data);
-      setLoadingTeams(false);
+      try {
+        setLoadingTeams(true);
+        const data = await getAllTeams();
+        setTeams(data);
+      } catch (err) {
+        setError("Failed to load teams. Backend may be offline.");
+      } finally {
+        setLoadingTeams(false);
+      }
     }
     loadTeams();
   }, []);
 
-  async function handleSelectTeam(team) {
-    setSelectedTeam(team);
-    setLoadingPlayers(true);
-    const playerList = await getPlayersForTeam(team.teamId);
-    setPlayers(playerList);
-    setLoadingPlayers(false);
-  }
-
   return (
-    <Box p={8}>
-      <Heading mb={4}>Teams</Heading>
+    <Box p={10}>
+      <Heading mb={4} color="blue.700">
+        Teams
+      </Heading>
 
       {loadingTeams ? (
         <Spinner size="xl" />
+      ) : error ? (
+        <Alert status="error" maxW="600px" mx="auto">
+          <AlertIcon />
+          {error}
+        </Alert>
       ) : (
-        <SimpleGrid columns={[1, 2, 3]} spacing={6}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={8}>
           {teams.map((team) => (
-            <TeamCard
-              key={team.teamId}
-              team={team}
-              onClick={() => handleSelectTeam(team)}
-            />
+            <TeamCard key={team.teamId} team={team} />
           ))}
         </SimpleGrid>
-      )}
-
-      {selectedTeam && (
-        <>
-          <Heading mt={10} mb={4}>
-            Players for {selectedTeam.name}
-          </Heading>
-
-          {loadingPlayers ? (
-            <Spinner size="lg" />
-          ) : (
-            <SimpleGrid columns={[1, 2, 3]} spacing={6}>
-              {players.map((player) => (
-                <PlayerCard key={player.playerId} player={player} />
-              ))}
-            </SimpleGrid>
-          )}
-        </>
       )}
     </Box>
   );

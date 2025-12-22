@@ -1,26 +1,33 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Link, Heading } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <Box bg="blue.600" color="white" px={8} py={4} boxShadow="sm">
+    <Box bg="blue.700" color="white" px={10} py={5} boxShadow="md">
       <Flex justify="space-between" align="center">
-        <Link
-          as={RouterLink}
-          to="/"
-          fontSize="xl"
-          fontWeight="bold"
-          _hover={{ textDecoration: "none", color: "blue.200" }}
-        >
-          Home
-        </Link>
+        <Heading size="lg">
+          <Link as={RouterLink} to="/" _hover={{ textDecoration: "none", color: "blue.200" }}>
+            NFL Database
+          </Link>
+        </Heading>
 
-        <Flex gap={6}>
+        <Flex gap={8}>
+          <Link
+            as={RouterLink}
+            to="/"
+            fontSize="lg"
+            fontWeight="medium"
+            _hover={{ color: "blue.200" }}
+          >
+            Home
+          </Link>
+
           <Link
             as={RouterLink}
             to="/database"
             fontSize="lg"
-            _hover={{ textDecoration: "none", color: "blue.200" }}
+            fontWeight="medium"
+            _hover={{ color: "blue.200" }}
           >
             Database
           </Link>
