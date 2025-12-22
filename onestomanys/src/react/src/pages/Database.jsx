@@ -1,4 +1,3 @@
-// src/react/src/pages/Database.jsx
 import { useEffect, useState } from "react";
 import {
   SimpleGrid,
@@ -28,12 +27,10 @@ export default function Database() {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
 
-  // Create team form
   const [newName, setNewName] = useState("");
   const [newCity, setNewCity] = useState("");
   const [newStadium, setNewStadium] = useState("");
 
-  // Edit team form
   const [editingTeam, setEditingTeam] = useState(null);
   const [editName, setEditName] = useState("");
   const [editCity, setEditCity] = useState("");
@@ -81,7 +78,6 @@ export default function Database() {
       });
       const updatedTeams = [...teams, created];
       setTeams(updatedTeams);
-      // reset filter
       setNewName("");
       setNewCity("");
       setNewStadium("");
@@ -134,9 +130,19 @@ export default function Database() {
 
   return (
     <Box p={10}>
-      <Heading mb={6} color="black">
+      <Heading mb={2} color="black" textAlign="center">
         Teams
       </Heading>
+
+      <Box display="flex" justifyContent="center" mb={10}>
+        <Box
+          w="160px"
+          h="4px"
+          borderRadius="full"
+          bg="blue.400"
+          boxShadow="0 0 12px rgba(0, 140, 255, 0.9)"
+        />
+      </Box>
 
       <Input
         placeholder="Search teams..."
@@ -172,7 +178,6 @@ export default function Database() {
         </SimpleGrid>
       )}
 
-      {/* Create Team */}
       <Box
         maxW="600px"
         mx="auto"
@@ -218,7 +223,6 @@ export default function Database() {
         </form>
       </Box>
 
-      {/* Edit Team */}
       {editingTeam && (
         <Box
           maxW="600px"

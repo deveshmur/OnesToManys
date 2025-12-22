@@ -1,4 +1,3 @@
-// src/react/src/pages/TeamDetails.jsx
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
@@ -30,13 +29,11 @@ export default function TeamDetails() {
   const [search, setSearch] = useState("");
   const [error, setError] = useState(null);
 
-  // Create player form
   const [newName, setNewName] = useState("");
   const [newPosition, setNewPosition] = useState("");
   const [newJerseyNumber, setNewJerseyNumber] = useState("");
   const [newHeightInches, setNewHeightInches] = useState("");
 
-  // Edit player form
   const [editingPlayer, setEditingPlayer] = useState(null);
   const [editName, setEditName] = useState("");
   const [editPosition, setEditPosition] = useState("");
@@ -153,9 +150,19 @@ export default function TeamDetails() {
         ← Back
       </Button>
 
-      <Heading mb={6} color="black">
+      <Heading mb={2} color="black" textAlign="center">
         Players
       </Heading>
+
+      <Box display="flex" justifyContent="center" mb={10}>
+        <Box
+          w="160px"
+          h="4px"
+          borderRadius="full"
+          bg="blue.400"
+          boxShadow="0 0 12px rgba(0, 140, 255, 0.9)"
+        />
+      </Box>
 
       <Input
         placeholder="Search players..."
@@ -191,7 +198,6 @@ export default function TeamDetails() {
         </SimpleGrid>
       )}
 
-      
       <Box
         maxW="600px"
         mx="auto"
@@ -247,7 +253,6 @@ export default function TeamDetails() {
         </form>
       </Box>
 
-      {/* Edit Player */}
       {editingPlayer && (
         <Box
           maxW="600px"
