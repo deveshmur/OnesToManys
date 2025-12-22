@@ -46,7 +46,6 @@ public class PlayerService {
                 request.getJerseyNumber(),
                 request.getHeightInches()
         );
-        // No team set here (team is null) – can be associated later via /api/teams/{teamId}/players
 
         Player saved = playerRepository.save(player);
         return toPlayerResponse(saved);

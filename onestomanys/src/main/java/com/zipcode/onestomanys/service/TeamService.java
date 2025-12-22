@@ -97,8 +97,6 @@ public class TeamService {
     @Transactional
     public void deleteTeam(Long teamId) {
         Team team = getTeamById(teamId);
-        // Because of cascade = ALL and orphanRemoval = true on Team.players,
-        // deleting the team will also delete its players.
         teamRepository.delete(team);
     }
 
@@ -189,7 +187,6 @@ public class TeamService {
             );
         }
 
-        // Keep both sides in sync, then delete
         team.removePlayer(player);
         playerRepository.delete(player);
     }

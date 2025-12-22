@@ -22,32 +22,27 @@ public class TeamController {
         this.teamService = teamService;
     }
 
-    // GET /api/teams
     @GetMapping
     public List<TeamResponse> getAllTeams() {
         return teamService.getAllTeams();
     }
 
-    // GET /api/teams/{teamId}
     @GetMapping("/{teamId}")
     public TeamResponse getTeamById(@PathVariable Long teamId) {
         return teamService.getTeamResponseById(teamId);
     }
 
-    // GET /api/teams/{teamId}/players
     @GetMapping("/{teamId}/players")
     public List<PlayerResponse> getPlayersForTeam(@PathVariable Long teamId) {
         return teamService.getPlayersForTeam(teamId);
     }
 
-    // POST /api/teams
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public TeamResponse createTeam(@Valid @RequestBody CreateTeamRequest request) {
         return teamService.createTeam(request);
     }
 
-    // PUT /api/teams/{teamId}
     @PutMapping("/{teamId}")
     public TeamResponse updateTeam(
             @PathVariable Long teamId,
@@ -55,14 +50,12 @@ public class TeamController {
         return teamService.updateTeam(teamId, request);
     }
 
-    // DELETE /api/teams/{teamId}
     @DeleteMapping("/{teamId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteTeam(@PathVariable Long teamId) {
         teamService.deleteTeam(teamId);
     }
 
-    // POST /api/teams/{teamId}/players
     @PostMapping("/{teamId}/players")
     @ResponseStatus(HttpStatus.CREATED)
     public PlayerResponse createPlayerForTeam(
@@ -71,7 +64,6 @@ public class TeamController {
         return teamService.createPlayerForTeam(teamId, request);
     }
 
-    // PUT /api/teams/{teamId}/players/{playerId}
     @PutMapping("/{teamId}/players/{playerId}")
     public PlayerResponse updatePlayerForTeam(
             @PathVariable Long teamId,
@@ -80,7 +72,6 @@ public class TeamController {
         return teamService.updatePlayerForTeam(teamId, playerId, request);
     }
 
-    // DELETE /api/teams/{teamId}/players/{playerId}
     @DeleteMapping("/{teamId}/players/{playerId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletePlayerFromTeam(

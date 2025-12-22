@@ -19,27 +19,22 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
-    // GET /api/players
     @GetMapping
     public List<PlayerResponse> getAllPlayers() {
         return playerService.getAllPlayers();
     }
 
-    // GET /api/players/{playerId}
     @GetMapping("/{playerId}")
     public PlayerResponse getPlayerById(@PathVariable Long playerId) {
         return playerService.getPlayerById(playerId);
     }
 
-    // POST /api/players
-    // Create a player not initially tied to a team (teamId = null)
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public PlayerResponse createPlayer(@Valid @RequestBody CreatePlayerRequest request) {
         return playerService.createPlayer(request);
     }
 
-    // PUT /api/players/{playerId}
     @PutMapping("/{playerId}")
     public PlayerResponse updatePlayer(
             @PathVariable Long playerId,
@@ -47,7 +42,6 @@ public class PlayerController {
         return playerService.updatePlayer(playerId, request);
     }
 
-    // DELETE /api/players/{playerId}
     @DeleteMapping("/{playerId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletePlayer(@PathVariable Long playerId) {
