@@ -42,7 +42,7 @@ export default function TeamCard({ team, onEdit, onDelete }) {
       {(onEdit || onDelete) && (
         <Flex gap={2}>
           {onEdit && (
-            <Button size="sm" variant="outline" onClick={handleEditClick}>
+            <Button size="sm" colorScheme="orange" onClick={handleEditClick}>
               Edit
             </Button>
           )}
