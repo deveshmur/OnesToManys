@@ -191,7 +191,7 @@ export default function TeamDetails() {
         </SimpleGrid>
       )}
 
-      {/* Create Player */}
+      
       <Box
         maxW="600px"
         mx="auto"

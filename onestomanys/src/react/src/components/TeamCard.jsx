@@ -1,4 +1,3 @@
-// src/react/src/components/TeamCard.jsx
 import { Box, Heading, Text, Button, Flex } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
@@ -21,33 +20,54 @@ export default function TeamCard({ team, onEdit, onDelete }) {
 
   return (
     <Box
-      borderWidth="1px"
-      borderRadius="lg"
       p={6}
-      bg="gray.500"
-      _hover={{ bg: "cyan", transform: "scale(1.03)" }}
-      transition="all 0.2s"
+      borderRadius="xl"
+      bg="rgba(255,255,255,0.1)"
+      backdropFilter="blur(6px)"
+      border="1px solid rgba(255,255,255,0.2)"
+      boxShadow="0 4px 20px rgba(0,0,0,0.35)"
+      transition="all 0.25s ease"
       cursor="pointer"
       onClick={handleCardClick}
-      boxShadow="sm"
+      _hover={{
+        transform: "scale(1.05)",
+        boxShadow: "0 6px 30px rgba(0,0,0,0.55)",
+        borderColor: "blue.300",
+      }}
     >
-      <Heading size="md" mb={2}>
+      <Heading size="lg" color="blue.200" mb={1}>
         {team.name}
       </Heading>
-      <Text fontWeight="semibold">{team.city}</Text>
-      <Text fontSize="sm" color="gray.700" mb={4}>
+
+      <Text fontSize="lg" fontWeight="semibold" color="white">
+        {team.city}
+      </Text>
+
+      <Box my={3} borderBottom="1px solid rgba(255,255,255,0.3)" />
+
+      <Text fontSize="sm" color="blue.100" mb={4}>
         Stadium: {team.stadium}
       </Text>
 
       {(onEdit || onDelete) && (
-        <Flex gap={2}>
+        <Flex gap={3}>
           {onEdit && (
-            <Button size="sm" colorScheme="orange" onClick={handleEditClick}>
+            <Button
+              size="sm"
+              colorScheme="orange"
+              onClick={handleEditClick}
+              variant="solid"
+            >
               Edit
             </Button>
           )}
           {onDelete && (
-            <Button size="sm" colorScheme="red" onClick={handleDeleteClick}>
+            <Button
+              size="sm"
+              colorScheme="red"
+              onClick={handleDeleteClick}
+              variant="solid"
+            >
               Delete
             </Button>
           )}
