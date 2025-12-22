@@ -1,12 +1,22 @@
 import { useEffect, useState } from "react";
-import { SimpleGrid, Box, Heading, Spinner, Alert, AlertIcon } from "@chakra-ui/react";
+import {
+  SimpleGrid,
+  Box,
+  Heading,
+  Spinner,
+  Alert,
+  AlertIcon,
+  Input,
+} from "@chakra-ui/react";
 import { getAllTeams } from "../utils/api";
 import TeamCard from "../components/TeamCard";
 
 export default function Database() {
   const [teams, setTeams] = useState([]);
+  const [filtered, setFiltered] = useState([]);
   const [loadingTeams, setLoadingTeams] = useState(true);
   const [error, setError] = useState(null);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     async function loadTeams() {
@@ -14,6 +24,7 @@ export default function Database() {
         setLoadingTeams(true);
         const data = await getAllTeams();
         setTeams(data);
+        setFiltered(data);
       } catch (err) {
         setError("Failed to load teams. Backend may be offline.");
       } finally {
@@ -23,11 +34,34 @@ export default function Database() {
     loadTeams();
   }, []);
 
+  useEffect(() => {
+    const lower = search.toLowerCase();
+    setFiltered(
+      teams.filter(
+        (t) =>
+          t.name.toLowerCase().includes(lower) ||
+          t.city.toLowerCase().includes(lower)
+      )
+    );
+  }, [search, teams]);
+
   return (
     <Box p={10}>
-      <Heading mb={4} color="black">
+      <Heading mb={6} color="white">
         Teams
       </Heading>
+
+      <Input
+        placeholder="Search teams..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        mb={8}
+        bg="white"
+        color="black"
+        maxW="400px"
+        mx="auto"
+        boxShadow="md"
+      />
 
       {loadingTeams ? (
         <Spinner size="xl" />
@@ -38,7 +72,7 @@ export default function Database() {
         </Alert>
       ) : (
         <SimpleGrid columns={[1, 2, 3]} spacing={8}>
-          {teams.map((team) => (
+          {filtered.map((team) => (
             <TeamCard key={team.teamId} team={team} />
           ))}
         </SimpleGrid>
