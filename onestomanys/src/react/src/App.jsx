@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Database from "./pages/Database";
+
 export default function App() {
   return (
-    <div>
-      <h1 style={{ textAlign: "center", padding: "20px" }}>
-        React + Chakra is working!
-      </h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/database" element={<Database />} />
+      </Routes>
+    </Router>
   );
 }

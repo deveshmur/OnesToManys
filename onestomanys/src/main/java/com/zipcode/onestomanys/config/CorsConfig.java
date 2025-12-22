@@ -20,7 +20,9 @@ public class CorsConfig {
                                 "http://localhost:5503",
                                 "http://127.0.0.1:5501",
                                 "http://127.0.0.1:5502",
-                                "http://127.0.0.1:5503"
+                                "http://127.0.0.1:5503",
+                                "http://localhost:5174",
+                                "http://127.0.0.1:5174"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
