@@ -9,8 +9,8 @@ export default function TeamCard({ team }) {
       borderWidth="1px"
       borderRadius="lg"
       p={6}
-      bg="blue.50"
-      _hover={{ bg: "blue.100", transform: "scale(1.03)" }}
+      bg="gray.500"
+      _hover={{ bg: "cyan", transform: "scale(1.03)" }}
       transition="all 0.2s"
       cursor="pointer"
       onClick={() => navigate(`/teams/${team.teamId}`)}
@@ -20,7 +20,7 @@ export default function TeamCard({ team }) {
         {team.name}
       </Heading>
       <Text fontWeight="semibold">{team.city}</Text>
-      <Text fontSize="sm" color="gray.600">
+      <Text fontSize="sm" color="gray.700">
         Stadium: {team.stadium}
       </Text>
     </Box>

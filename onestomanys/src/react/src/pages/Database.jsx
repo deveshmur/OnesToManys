@@ -25,7 +25,7 @@ export default function Database() {
 
   return (
     <Box p={10}>
-      <Heading mb={4} color="blue.700">
+      <Heading mb={4} color="black">
         Teams
       </Heading>
 

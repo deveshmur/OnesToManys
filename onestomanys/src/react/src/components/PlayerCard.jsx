@@ -6,7 +6,7 @@ export default function PlayerCard({ player }) {
       borderWidth="1px"
       borderRadius="lg"
       p={5}
-      bg="white"
+      bg="gray.500"
       boxShadow="md"
       _hover={{ transform: "scale(1.02)" }}
       transition="all 0.2s ease"

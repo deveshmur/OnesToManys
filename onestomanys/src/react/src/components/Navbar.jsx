@@ -3,11 +3,11 @@ import { Link as RouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <Box bg="blue.700" color="white" px={10} py={5} boxShadow="md">
+    <Box bg="black" color="white" px={10} py={5} boxShadow="md">
       <Flex justify="space-between" align="center">
         <Heading size="lg">
           <Link as={RouterLink} to="/" _hover={{ textDecoration: "none", color: "blue.200" }}>
-            NFL Database
+           🏈  NFL Database
           </Link>
         </Heading>
 
