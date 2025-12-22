@@ -43,11 +43,11 @@ export default function TeamDetails() {
 
   return (
     <Box p={10}>
-      <Button mb={6} colorScheme="blue" variant="outline" onClick={() => history.back()}>
+      <Button mb={6} colorScheme="black" variant="outline" onClick={() => history.back()}>
         ← Back
       </Button>
 
-      <Heading mb={6} color="white">
+      <Heading mb={6} color="black">
         Players
       </Heading>
 

@@ -7,7 +7,7 @@ export default function Navbar() {
       <Flex justify="space-between" align="center">
         <Heading size="lg">
           <Link as={RouterLink} to="/" _hover={{ textDecoration: "none", color: "blue.200" }}>
-           🏈  NFL Database
+           NFL Database
           </Link>
         </Heading>
 
@@ -17,7 +17,7 @@ export default function Navbar() {
             to="/"
             fontSize="lg"
             fontWeight="medium"
-            _hover={{ color: "blue.200" }}
+            _hover={{ color: "cyan" }}
           >
             Home
           </Link>
@@ -27,7 +27,7 @@ export default function Navbar() {
             to="/database"
             fontSize="lg"
             fontWeight="medium"
-            _hover={{ color: "blue.200" }}
+            _hover={{ color: "cyan" }}
           >
             Database
           </Link>
